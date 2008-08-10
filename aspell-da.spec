@@ -1,8 +1,8 @@
 %define _enable_debug_packages %{nil}
 %define debug_package          %{nil}
 
-%define src_ver 1.4.42-1
-%define fname aspell5-%{languagecode}
+%define src_ver 1.6.16
+%define fname new_aspell-da
 %define aspell_ver 0.60
 %define languagelocal dansk
 %define languageeng danish
@@ -11,12 +11,12 @@
 
 Summary:       %{languageenglazy} files for aspell
 Name:          aspell-%{languagecode}
-Version:       1.4.42.1
-Release:       %mkrel 6
+Version:       1.6.16
+Release:       %mkrel 1
 Epoch:	       1
 Group:         System/Internationalization
-Source:        http://ftp.gnu.org/gnu/aspell/dict/%{languagecode}/%{fname}-%{src_ver}.tar.bz2
-URL:           http://aspell.sourceforge.net/
+Source:        http://da.speling.org/filer/new_aspell-da-%version.tar.bz2
+URL:           http://da.speling.org/
 License:       GPL
 BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 Provides: spell-da
@@ -61,7 +61,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc README* Copyright doc/contributors
+%doc README*
 %{_libdir}/aspell-%{aspell_ver}/*
 
 
