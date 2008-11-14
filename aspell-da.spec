@@ -1,7 +1,7 @@
 %define _enable_debug_packages %{nil}
 %define debug_package          %{nil}
 
-%define src_ver 1.6.16
+%define src_ver %version
 %define fname new_aspell-da
 %define aspell_ver 0.60
 %define languagelocal dansk
@@ -11,7 +11,7 @@
 
 Summary:       %{languageenglazy} files for aspell
 Name:          aspell-%{languagecode}
-Version:       1.6.16
+Version:       1.6.19
 Release:       %mkrel 1
 Epoch:	       1
 Group:         System/Internationalization
