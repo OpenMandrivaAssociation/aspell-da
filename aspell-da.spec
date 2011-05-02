@@ -12,7 +12,7 @@
 Summary:       %{languageenglazy} files for aspell
 Name:          aspell-%{languagecode}
 Version:       1.6.19
-Release:       %mkrel 4
+Release:       %mkrel 5
 Epoch:	       1
 Group:         System/Internationalization
 Source:        http://da.speling.org/filer/new_aspell-da-%version.tar.bz2
