@@ -12,7 +12,8 @@
 Summary:       %{languageenglazy} files for aspell
 Name:          aspell-%{languagecode}
 Version:       1.7.42
-Release:       1
+Release:       2
+Epoch:	       1
 Group:         System/Internationalization
 Source:        http://da.speling.org/filer/new_aspell-da-%version.tar.bz2
 URL:           http://da.speling.org/
