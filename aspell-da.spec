@@ -1,7 +1,7 @@
 %define _enable_debug_packages %{nil}
 %define debug_package          %{nil}
 
-%define src_ver %version
+%define src_ver %{version}
 %define fname new_aspell-da
 %define aspell_ver 0.60
 %define languagelocal dansk
@@ -11,14 +11,12 @@
 
 Summary:       %{languageenglazy} files for aspell
 Name:          aspell-%{languagecode}
-Version:       1.6.19
-Release:       %mkrel 5
-Epoch:	       1
+Version:       1.7.42
+Release:       1
 Group:         System/Internationalization
 Source:        http://da.speling.org/filer/new_aspell-da-%version.tar.bz2
 URL:           http://da.speling.org/
 License:       GPL
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 Provides: spell-da
 
 BuildRequires: aspell >= %{aspell_ver}
@@ -43,24 +41,15 @@ A %{languageenglazy} dictionary for use with aspell, a spelling checker.
 %setup -q -n %{fname}-%{src_ver}
 
 %build
-
 # don't use configure macro
 ./configure
-
 %make
 
 %install
-rm -fr $RPM_BUILD_ROOT
-
 %makeinstall_std
-
 chmod 644 README Copyright
 
-%clean
-rm -fr $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root)
 %doc README*
 %{_libdir}/aspell-%{aspell_ver}/*
 

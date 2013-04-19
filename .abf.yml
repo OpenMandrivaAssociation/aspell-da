@@ -1,2 +1,4 @@
+removed_sources:
+  new_aspell-da-1.6.19.tar.bz2: 0c2dc79165e562687ae50e03ff5135c9f0c00457
 sources:
-  "new_aspell-da-1.6.19.tar.bz2": 0c2dc79165e562687ae50e03ff5135c9f0c00457
+  new_aspell-da-1.7.42.tar.bz2: faedaff88a7f6a8fcf6ba3d32f10224522e3d5a2
