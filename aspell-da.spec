@@ -16,7 +16,7 @@ Release:	12
 Epoch:		1
 Group:		System/Internationalization
 License:	GPLv2
-Url:		http://da.speling.org/
+Url:		https://da.speling.org/
 Source0:	http://da.speling.org/filer/new_aspell-da-%version.tar.bz2
 BuildRequires:	aspell >= %{aspell_ver}
 Requires:	aspell >= %{aspell_ver}
