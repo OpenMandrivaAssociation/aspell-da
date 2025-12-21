@@ -18,6 +18,11 @@ Group:		System/Internationalization
 License:	GPLv2
 Url:		https://da.speling.org/
 Source0:	http://da.speling.org/filer/new_aspell-da-%version.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	aspell >= %{aspell_ver}
 Requires:	aspell >= %{aspell_ver}
 # Mandriva Stuff
